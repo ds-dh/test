@@ -9,15 +9,11 @@ USER root
 
 
 #'numpy=1.13.3' 
-
-
-RUN conda install --yes 'setuptools' 
-RUN conda install --yes 'sqlite' 
-RUN conda install --yes 'bokeh' 
-RUN conda install --yes 'pandas' 
-RUN conda install --yes 'plotly' 
-RUN conda install --yes 'scrapy' 
-RUN conda install --yes 'dill'
+RUN pip install --upgrade --quiet 'ez_setup' 
+RUN pip install --upgrade --quiet 'unidecode' 
+RUN pip install --upgrade --quiet 'geopandas' 
+RUN pip install --upgrade --quiet 'multiprocess' 
+RUN pip install --upgrade --quiet 'git+https://github.com/esafak/mca'
 
 #RUN pip install 'geopandas'
 
