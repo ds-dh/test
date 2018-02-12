@@ -9,9 +9,7 @@ USER root
 
 
 #'numpy=1.13.3' 
-RUN pip install --upgrade --quiet 'ez_setup' 
-RUN pip install --upgrade --quiet 'unidecode' 
-RUN pip install --upgrade --quiet 'geopandas' 
+ 
 RUN pip install --upgrade --quiet 'multiprocess' 
 RUN pip install --upgrade --quiet 'git+https://github.com/esafak/mca'
 
